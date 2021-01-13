@@ -11,7 +11,7 @@ public class MainApp {
         double toDouble = 1235.0d;
         float toFloat = 12312.0f;
 
-        char toChar = 't'; // 16 бита
+        char toChar = 't';
         boolean toBoolean = false;
 
         System.out.println("byte: " + toByte);
