@@ -168,10 +168,9 @@ public class MainApp {
     }
 
     public static void negative(int[] array, int n) {
-        //7 5 3 2 11
         n = Math.abs(n);
+        int length = array.length - 1;
         for (int i = 0; i < n; i++) {
-            int length = array.length - 1;
             int temp = array[length];
             array[length] = array[0];
             for (int j = 1; j <= length; j++) {
