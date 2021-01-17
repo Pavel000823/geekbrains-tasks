@@ -189,7 +189,7 @@ public class MainApp {
         for (int i = 0; i < array.length; i++) {
             System.out.print(array[i] + " ");
         }
-        System.out.println(""); // для того что бы перешли на новую строку
+        System.out.println(); // для того что бы перешли на новую строку
     }
 
     public static void print(int[][] array) {
@@ -197,7 +197,7 @@ public class MainApp {
             for (int j = 0; j < array[i].length; j++) {
                 System.out.print(array[i][j] + " ");
             }
-            System.out.println("");
+            System.out.println();
         }
     }
 }
