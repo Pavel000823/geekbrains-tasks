@@ -31,9 +31,11 @@ public class MainApp {
         System.out.println(checkBalance(array6));
         System.out.println(checkBalance(array7));
 
-        reverse(array8, -2);
-        reverse(array8, 8);
         reverse(array8, 3);
+        reverse(array8, -3);
+        reverse(array8, 4);
+        reverse(array8, 8);
+        reverse(array8, -4);
     }
 
 
@@ -154,15 +156,14 @@ public class MainApp {
     }
 
     public static void positive(int[] array, int n) {
+        //{7, 5, 3, 2, 11};
+        int length = array.length - 1;
         for (int i = 0; i < n; i++) {
-            int temp = array[0];
-            array[0] = array[array.length - 1];
-            for (int j = array.length - 1; j > 1; j--) {
+            int temp = array[length];
+            for (int j = length; j > 0; j--) {
                 array[j] = array[j - 1];
-                if (j - 1 == 1) {
-                    array[j - 1] = temp;
-                }
             }
+            array[0] = temp;
         }
         print(array);
     }
@@ -171,14 +172,11 @@ public class MainApp {
         n = Math.abs(n);
         int length = array.length - 1;
         for (int i = 0; i < n; i++) {
-            int temp = array[length];
-            array[length] = array[0];
-            for (int j = 1; j <= length; j++) {
-                array[j - 1] = array[j];
-                if (j == length) {
-                    array[j - 1] = temp;
-                }
+            int temp = array[0];
+            for (int j = 0; j < length; j++) {
+                array[j] = array[j + 1];
             }
+            array[length] = temp;
         }
         print(array);
     }
