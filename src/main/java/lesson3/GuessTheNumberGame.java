@@ -3,14 +3,14 @@ package lesson3;
 import java.util.Random;
 import java.util.Scanner;
 
-public class GuessTheNumber {
+public class GuessTheNumberGame {
     int min = 0;
     int max = 9;
     Scanner sc = new Scanner(System.in);
 
     public static void main(String[] args) {
-        GuessTheNumber guessTheNumber = new GuessTheNumber();
-        guessTheNumber.playGame();
+        GuessTheNumberGame game = new GuessTheNumberGame();
+        game.playGame();
     }
 
     public void playGame() {
