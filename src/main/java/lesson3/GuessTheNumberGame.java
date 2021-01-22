@@ -16,9 +16,9 @@ public class GuessTheNumberGame {
     public void playGame() {
         Random random = new Random();
         int userNumber;
-        int randomInt = random.nextInt(max - min) + min;  // если указываю просто 10 как на леции. То у меня всегда randomInt равен 0
         boolean flag = true; // для условия выхода из игры
         while (flag) {
+            int randomInt = random.nextInt(max - min) + min;
             System.out.println("Введите число от " + min + " до " + max);
             int count = 3; // счетчик попыток
             do {
