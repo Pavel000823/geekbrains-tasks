@@ -97,14 +97,9 @@ public class MainApp {
 
     // 5. Задать одномерный массив и найти в нем минимальный и максимальный элементы (без помощи интернета);
     public static void findMaxAndMinValues(int[] array) {
-        int max = 0;
-        int min = 0;
+        int max = array[0];
+        int min = array[0];
         for (int i = 0; i < array.length; i++) {
-            if (i == 0) {
-                max = array[0];
-                min = array[0];
-                continue;
-            }
             if (array[i] > max) {
                 max = array[i];
             }
