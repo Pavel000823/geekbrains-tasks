@@ -41,7 +41,7 @@ public class TicTacToe {
                 printGameMap();
                 break;
             }
-            if (count == SIZE*SIZE) {
+            if (count == SIZE * SIZE) {
                 System.out.println("Ничья!!!");
                 printGameMap();
                 break;
@@ -238,6 +238,8 @@ public class TicTacToe {
             }
             x = 0;  // обнуляем счетчики при переходе на след итерацию
             y = 0;
+            diagonal1 = 0;
+            diagonal2 = 0;
         }
         return false;
     }
