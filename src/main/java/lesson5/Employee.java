@@ -3,7 +3,7 @@ package lesson5;
 public class Employee {
 
     private String fio;
-    String position;
+    private String position;
     private String email;
     private String phone;
     private int salary;
