@@ -9,13 +9,22 @@ public class MainApp {
                 new Cat("Барс", 7), new Cat("Обжора", 20)};
 
         plate.fillPlate(40);
+
         for (Cat cat : cats) {
             cat.eat(plate);
+        }
+        System.out.println("-------------------"); // разделить вывод
+        for (Cat cat : cats) {
+            System.out.println("Кот " + cat.getName() + " сыт или нет : " + cat.isSatiety());
         }
         plate.fillPlate(15);
         System.out.println("-------------------"); // разделить вывод
         for (Cat cat : cats) {
             cat.eat(plate);
+        }
+        System.out.println("-------------------"); // разделить вывод
+        for (Cat cat : cats) {
+            System.out.println("Кот " + cat.getName() + " сыт или нет : " + cat.isSatiety());
         }
     }
 }

@@ -32,7 +32,7 @@ public class Cat {
             return;
         }
         // если в тарелке есть еда и коту недостаточно для насыщения
-        if (plate.getCurrentFoot() > 0 && plate.getCurrentFoot() <= satietyVolume) {
+        if (plate.getCurrentFoot() > 0) {
             if (currentSatiety == 0) { // кормим кота тем что есть
                 int foot = satietyVolume - plate.getCurrentFoot(); // сколько коту нужно для насыщения
                 System.out.println(name + " съел " + plate.getCurrentFoot() + " , кот не наелся, ему не хватило " + foot);
@@ -75,5 +75,13 @@ public class Cat {
                 ", satietyVolume=" + satietyVolume +
                 ", currentSatiety=" + currentSatiety +
                 '}';
+    }
+
+    public boolean isSatiety() {
+        return currentSatiety == satietyVolume;
+    }
+
+    public String getName() {
+        return name;
     }
 }
