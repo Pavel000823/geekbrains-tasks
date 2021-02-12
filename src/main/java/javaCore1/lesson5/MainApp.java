@@ -1,4 +1,4 @@
-package lesson5;
+package javaCore1.lesson5;
 
 public class MainApp {
 

@@ -1,7 +1,7 @@
-package lesson8;
+package javaCore1.lesson8;
 
-import lesson8.actions.CleanerAction;
-import lesson8.actions.SendMessageAction;
+import javaCore1.lesson8.actions.CleanerAction;
+import javaCore1.lesson8.actions.SendMessageAction;
 
 import javax.swing.*;
 import java.awt.*;

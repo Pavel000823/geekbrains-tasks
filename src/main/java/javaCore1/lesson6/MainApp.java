@@ -1,8 +1,8 @@
-package lesson6;
+package javaCore1.lesson6;
 
-import lesson6.animals.Animal;
-import lesson6.animals.Cat;
-import lesson6.animals.Dog;
+import javaCore1.lesson6.animals.Animal;
+import javaCore1.lesson6.animals.Cat;
+import javaCore1.lesson6.animals.Dog;
 
 public class MainApp {
 

@@ -1,6 +1,6 @@
-package lesson8.actions;
+package javaCore1.lesson8.actions;
 
-import lesson8.Chat;
+import javaCore1.lesson8.Chat;
 
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;

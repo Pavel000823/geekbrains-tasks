@@ -1,4 +1,4 @@
-package lesson6.animals;
+package javaCore1.lesson6.animals;
 
 public class Cat extends Animal {
 
