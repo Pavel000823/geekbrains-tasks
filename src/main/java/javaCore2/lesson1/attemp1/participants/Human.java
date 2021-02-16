@@ -1,14 +1,14 @@
-package javaCore2.lesson1.participants;
+package javaCore2.lesson1.attemp1.participants;
 
-public class Robot {
+public class Human {
 
     private final String name;
     private int maxRunDistance;
     private int maxHeightJump;
     private final String type;
 
-    public Robot(String name, int maxRunDistance, int maxRunJump) {
-        type = "Робот";
+    public Human(String name, int maxRunDistance, int maxRunJump) {
+        type = "Человек";
         this.name = name;
         this.maxRunDistance = getMaxRunDistance(maxRunDistance);
         this.maxHeightJump = getMaxJumpDistance(maxRunJump);
@@ -56,7 +56,7 @@ public class Robot {
 
     @Override
     public String toString() {
-        return "Robot{" +
+        return "Human{" +
                 "name='" + name + '\'' +
                 ", maxRunDistance=" + maxRunDistance +
                 ", maxHeightJump=" + maxHeightJump +

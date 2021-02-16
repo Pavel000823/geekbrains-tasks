@@ -1,11 +1,11 @@
-package javaCore2.lesson1;
+package javaCore2.lesson1.attemp1;
 
-import javaCore2.lesson1.obstracles.Obstacle;
-import javaCore2.lesson1.obstracles.RunningTrack;
-import javaCore2.lesson1.obstracles.Wall;
-import javaCore2.lesson1.participants.Cat;
-import javaCore2.lesson1.participants.Human;
-import javaCore2.lesson1.participants.Robot;
+import javaCore2.lesson1.attemp1.obstracles.Obstacle;
+import javaCore2.lesson1.attemp1.obstracles.RunningTrack;
+import javaCore2.lesson1.attemp1.obstracles.Wall;
+import javaCore2.lesson1.attemp1.participants.Cat;
+import javaCore2.lesson1.attemp1.participants.Human;
+import javaCore2.lesson1.attemp1.participants.Robot;
 
 public class MainApp {
 

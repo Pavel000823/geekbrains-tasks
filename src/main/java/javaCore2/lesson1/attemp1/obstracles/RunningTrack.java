@@ -1,8 +1,8 @@
-package javaCore2.lesson1.obstracles;
+package javaCore2.lesson1.attemp1.obstracles;
 
-import javaCore2.lesson1.participants.Cat;
-import javaCore2.lesson1.participants.Human;
-import javaCore2.lesson1.participants.Robot;
+import javaCore2.lesson1.attemp1.participants.Cat;
+import javaCore2.lesson1.attemp1.participants.Human;
+import javaCore2.lesson1.attemp1.participants.Robot;
 
 public class RunningTrack implements Obstacle {
 

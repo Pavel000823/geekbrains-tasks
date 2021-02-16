@@ -1,4 +1,4 @@
-package javaCore2.lesson1.participants;
+package javaCore2.lesson1.attemp1.participants;
 
 public class Cat {
 
