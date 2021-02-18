@@ -2,10 +2,6 @@ package javaCore2.lesson2;
 
 import javaCore2.lesson2.exptions.MyArrayDataException;
 import javaCore2.lesson2.exptions.MyArraySizeException;
-import javaCore2.lesson2.exptions.MyRegexException;
-
-import java.util.regex.Matcher;
-import java.util.regex.Pattern;
 
 public class MainApp {
 
@@ -22,19 +18,15 @@ public class MainApp {
     }
 
     public static void printArraySum(String[][] data) {
-        boolean flag = false;
-        while (!flag) {
-            try {
-                int sum = getSum(data);
-                System.out.println("Сумма массива = " + sum);
-                printArray(data);
-                flag = true;
-            } catch (MyArraySizeException e) {
-                System.out.println(e.getMessage());
-                flag = true;
-            } catch (MyArrayDataException e) {
-                fixArrayData(data, e);
-            }
+        try {
+            int sum = getSum(data);
+            System.out.println("Сумма массива = " + sum);
+            printArray(data);
+        } catch (MyArraySizeException e) {
+            System.out.println(e.getMessage());
+        } catch (MyArrayDataException e) {
+            fixArrayData(data);
+            printArraySum(data);
         }
     }
 
@@ -69,22 +61,15 @@ public class MainApp {
         }
     }
 
-    private static boolean checkRegex(String str, String regex) {
-        Pattern pattern = Pattern.compile(regex);
-        Matcher matcher = pattern.matcher(str);
-        return matcher.find();
-    }
 
-    private static void fixArrayData(String[][] array, MyArrayDataException e) {
-        String message = e.getMessage();
-        String regex = "[\\d+]+";
-        if (checkRegex(message, regex)) {
-            int i = Integer.parseInt(message.substring(message.indexOf("[") + 1, message.indexOf("]")));
-            int j = Integer.parseInt(message.substring(message.lastIndexOf("[") + 1, message.lastIndexOf("]")));
-            array[i][j] = "0";
-            return;
+    private static void fixArrayData(String[][] array) {
+        for (int i = 0; i < array.length; i++) {
+            for (int j = 0; j < array[i].length; j++) {
+                if (!parseInt(array[i][j])) {
+                    array[i][j] = "0";
+                }
+            }
         }
-        throw new MyRegexException("Не удалось получить из " + e.getClass() + " путь к ячейки массива: regex = " + regex + " message = " + message);
     }
 
 
