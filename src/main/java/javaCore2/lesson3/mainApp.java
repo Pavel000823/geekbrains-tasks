@@ -45,9 +45,9 @@ public class mainApp {
         book.addRecord("Петрова", "+79156453155");
         book.addRecord("Иванов", "+791569031556");
 
-        book.findPhoneNumber("Cоловьев");
-        book.findPhoneNumber("Иванов");
-        book.findPhoneNumber("Ернен");
+        book.get("Cоловьев");
+        book.get("Иванов");
+        book.get("Ернен");
     }
 
     public static void printData(List<String> list, boolean unique) {

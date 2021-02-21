@@ -23,7 +23,7 @@ public class AddressBook {
         addressBook.put(family, list);
     }
 
-    public void findPhoneNumber(String family) {
+    public void get(String family) {
         if (!addressBook.containsKey(family)) {
             System.out.println("В справочнике нет информации по запросу " + family);
             return;
